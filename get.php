@@ -3,6 +3,8 @@
 header('Access-Control-Allow-Origin: *');
 
 if($_SERVER['REQUEST_METHOD']=='GET')
+	
+
 {
    $hn = 'localhost';
    $un = 'root';

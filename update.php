@@ -19,7 +19,8 @@ if($_SERVER['REQUEST_METHOD']=='POST')
   
   if(isset($check))
   {
-      $sql = "UPDATE pariwisata SET nama_wisata = '$nama_wisata', photo = '$photo', keterangan = '$keterangan' WHERE id = '$id'";
+      $sql = "UPDATE pariwisata SET nama_wisata = '$nama_wisata'
+	  , photo = '$photo', keterangan = '$keterangan' WHERE id = '$id'";
       
       if(mysqli_query($con,$sql))
       {
